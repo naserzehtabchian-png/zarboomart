@@ -10,51 +10,77 @@ body{
 margin:0;
 font-family:tahoma;
 background:#111;
-color:#fff;
+color:white;
+}
+
+header{
+background:#1b1b1b;
+padding:20px;
 text-align:center;
 }
-header{
-padding:60px 20px;
-background:#000;
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
 }
-h1{
-color:#d4af37;
-font-size:42px;
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:#222;
 }
-p{
-font-size:20px;
+
+.hero h1{
+font-size:45px;
 }
+
 .btn{
 display:inline-block;
 padding:15px 35px;
-background:#d4af37;
-color:#000;
+background:#ff9800;
+color:white;
 text-decoration:none;
-border-radius:10px;
-font-weight:bold;
+border-radius:8px;
 margin-top:20px;
 }
-section{
-padding:40px 20px;
+
+.section{
+padding:60px 20px;
+max-width:1100px;
+margin:auto;
 }
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
 .card{
 background:#222;
-margin:15px auto;
-padding:20px;
-border-radius:15px;
-max-width:450px;
+padding:25px;
+border-radius:12px;
+width:300px;
+text-align:center;
 }
+
 .price{
-font-size:28px;
-color:#d4af37;
+font-size:24px;
+color:#4CAF50;
 }
+
 .old{
 text-decoration:line-through;
-color:#888;
+color:#999;
 }
+
 footer{
-padding:30px;
-background:#000;
+background:#1b1b1b;
+padding:20px;
+text-align:center;
+margin-top:40px;
 }
 </style>
 
@@ -63,36 +89,97 @@ background:#000;
 <body>
 
 <header>
-<h1>ZarBoom ART</h1>
-<p>آموزش حرفه‌ای سیاه‌قلم و نقاشی</p>
 
-<a class="btn" href="tel:09100799725">
-ثبت نام
-</a>
+<h1>ZarBoom ART</h1>
+
+<nav>
+<a href="#">خانه</a>
+<a href="#">کلاس‌ها</a>
+<a href="#">درباره ما</a>
+<a href="#">تماس</a>
+</nav>
 
 </header>
 
-<section>
+<section class="hero">
+
+<h1>هنر را حرفه‌ای یاد بگیرید</h1>
+
+<p>
+آموزش تخصصی سیاه‌قلم و نقاشی رنگی
+</p>
+
+<a class="btn" href="#">مشاهده کلاس‌ها</a>
+
+</section>
+
+<section class="section">
+
+<h2>کلاس‌ها</h2>
+
+<div class="cards">
 
 <div class="card">
-<h2>سیاه‌قلم</h2>
+
+<h3>سیاه قلم</h3>
+
+<p>مدرس: زهرا زه‌تاب</p>
+
 <p class="old">1,000,000 تومان</p>
+
 <p class="price">800,000 تومان</p>
+
+<a class="btn">ثبت‌نام</a>
+
 </div>
 
 <div class="card">
-<h2>نقاشی رنگی</h2>
+
+<h3>نقاشی رنگی</h3>
+
+<p>مدرس: زهرا زه‌تاب</p>
+
 <p class="old">1,000,000 تومان</p>
+
 <p class="price">800,000 تومان</p>
+
+<a class="btn">ثبت‌نام</a>
+
 </div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>درباره مدرس</h2>
+
+<p>
+
+زهرا زه‌تاب
+
+<br><br>
+
+آموزش تخصصی طراحی و نقاشی از مبتدی تا پیشرفته
+
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>تماس با ما</h2>
+
+<p>📞 09100799725</p>
+
+<p>Instagram : @zahra_zehtabb_artist</p>
 
 </section>
 
 <footer>
 
-<p>مدرس: زهرا زه‌تاب</p>
-
-<p>09100799725</p>
+© 2026 ZarBoom ART
 
 </footer>
 
